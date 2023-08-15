@@ -1,0 +1,14 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = Keval Kapdee
+	email = keval@kapdee.uk
+[commit]
+	gpgSign = 1
+[init]
+	defaultBranch = master
+[push]
+	autoSetupRemote = on

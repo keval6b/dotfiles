@@ -1,0 +1,7 @@
+window:
+  dimensions:
+    columns: 80
+    lines: 24
+  opacity: 0.9
+    #font:
+  #  size: 13
