@@ -1,94 +1,148 @@
-{ config, pkgs, ... }:
+{ config, lib, pkgs, modulesPath, ... }:
 
 {
-  imports = [ ./hardware.nix ];
+  imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
-  hardware.opengl = {
-    enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
-  };
-
-  hardware.nvidia = {
-    modesetting.enable = true;
-    open = false;
-    nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
-  };
-
-  boot.loader = {
-    efi = { efiSysMountPoint = "/boot/efi"; };
-    grub = {
-      enable = true;
-      efiSupport = true;
-      device = "nodev";
-      # useOSProber = true;
+  fileSystems = {
+    "/" = {
+      device = "/dev/disk/by-label/nixos";
+      fsType = "ext4";
+    };
+    "/home" = {
+      device = "/dev/disk/by-label/home";
+      fsType = "ext4";
+    };
+    "/boot/efi" = {
+      device = "/dev/disk/by-label/EFI";
+      fsType = "vfat";
     };
   };
-  boot.loader.efi.canTouchEfiVariables = true;
+
+  boot = {
+    initrd = {
+      availableKernelModules =
+        [ "nvme" "xhci_pci" "usbhid" "usb_storage" "sd_mod" "sdhci_pci" ];
+      kernelModules = [ "nvidia" "amdgpu" ];
+    };
+    kernelModules = [ "kvm-amd" ];
+    loader = {
+      efi = {
+        efiSysMountPoint = "/boot/efi";
+        canTouchEfiVariables = true;
+      };
+      grub = {
+        enable = true;
+        efiSupport = true;
+        device = "nodev";
+        # useOSProber = true;
+      };
+    };
+  };
+
+  hardware = {
+    cpu.amd.updateMicrocode =
+      lib.mkDefault config.hardware.enableRedistributableFirmware;
+    nvidia = {
+      modesetting.enable = true;
+      open = false;
+      nvidiaSettings = true;
+      package = config.boot.kernelPackages.nvidiaPackages.stable;
+    };
+    opengl = {
+      enable = true;
+      driSupport = true;
+      driSupport32Bit = true;
+    };
+    bluetooth = {
+      enable = true;
+      settings.General.Enable = "Source,Sink,Media,Socket";
+    };
+  };
+
+  networking = {
+    useDHCP = lib.mkDefault true;
+    hostName = "mercury";
+    networkmanager.enable = true;
+    firewall = { enable = true; };
+  };
+
+  nixpkgs = {
+    hostPlatform = lib.mkDefault "x86_64-linux";
+    config.allowUnfree = true;
+  };
 
   time.timeZone = "Europe/London";
 
   i18n = { defaultLocale = "en_GB.UTF-8"; };
 
-  services.xserver.enable = true;
-
-  services.xserver.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
-  environment.plasma5.excludePackages = with pkgs.libsForQt5; [
-    elisa
-    khelpcenter
-    krunner
-  ];
-  services.xserver.videoDrivers = [ "nvidia" "amdgpu" ];
-  services.xserver.excludePackages = [ pkgs.xterm ];
-  security.doas = {
-    enable = true;
-    extraRules = [{
-      users = [ "keval" ];
-      keepEnv = true;
-      persist = true;
-    }];
-  };
-  security.sudo.enable = false;
-
-  networking.hostName = "mercury"; # Define your hostname.
-  networking.networkmanager.enable = true;
-
-  hardware.bluetooth = {
-    enable = true;
-    settings.General.Enable = "Source,Sink,Media,Socket";
-  };
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
+  services = {
+    xserver = {
+      enable = true;
+      displayManager.sddm.enable = true;
+      desktopManager.plasma5.enable = true;
+      videoDrivers = [ "nvidia" "amdgpu" ];
+      excludePackages = [ pkgs.xterm ];
+      libinput.enable = true;
+    };
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      alsa.support32Bit = true;
+      pulse.enable = true;
+    };
+    supergfxd.enable = true;
+    asusd = {
+      enable = true;
+      enableUserService = true;
+    };
   };
 
-  services.supergfxd.enable = true;
-  services.asusd = {
-    enable = true;
-    enableUserService = true;
+  security = {
+    sudo.enable = false;
+    doas = {
+      enable = true;
+      extraRules = [{
+        users = [ "keval" ];
+        keepEnv = true;
+        persist = true;
+      }];
+    };
+    rtkit.enable = true;
   };
 
-  services.xserver.libinput.enable = true;
-
-  programs.fish = {
-    enable = true;
-    interactiveShellInit = ''
-      set fish_greeting
-    '';
+  programs = {
+    fish = {
+      enable = true;
+      interactiveShellInit = ''
+        set fish_greeting
+      '';
+    };
+    gnupg.agent.enable = true;
   };
 
-  programs.gnupg.agent = { enable = true; };
+  virtualisation = {
+    podman = {
+      enable = true;
+      defaultNetwork.settings.dns_enabled = true;
+    };
+  };
 
-  nixpkgs.config.allowUnfree = true;
+  users = {
+    defaultUserShell = pkgs.fish;
+    users.keval = {
+      isNormalUser = true;
+      description = "Keval Kapdee";
+      extraGroups = [ "networkmanager" "libvirtd" "wheel" ];
+    };
+  };
 
   environment = {
+    plasma5.excludePackages = with pkgs.libsForQt5; [
+      elisa
+      khelpcenter
+      krunner
+      konsole
+    ];
     systemPackages = with pkgs; [
       vim
       btop
@@ -107,23 +161,6 @@
     shells = with pkgs; [ fish ];
   };
 
-  users.defaultUserShell = pkgs.fish;
-
-  users.users.keval = {
-    isNormalUser = true;
-    description = "Keval Kapdee";
-    extraGroups = [ "networkmanager" "libvirtd" "wheel" ];
-  };
-
-  networking.firewall.enable = false;
-
-  virtualisation = {
-    podman = {
-      enable = true;
-      defaultNetwork.settings.dns_enabled = true;
-    };
-  };
-
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It's perfectly fine and recommended to leave
@@ -132,4 +169,3 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.05"; # Did you read the comment?
 }
-
