@@ -162,6 +162,7 @@
       discord
       rofi
       nixfmt
+      libsForQt5.kalk
     ];
     shells = with pkgs; [ fish ];
   };
