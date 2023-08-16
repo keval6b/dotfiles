@@ -123,6 +123,7 @@
       '';
     };
     gnupg.agent.enable = true;
+    kdeconnect.enable = true;
   };
 
   virtualisation = {
@@ -160,7 +161,6 @@
       spotify
       discord
       rofi
-      kdeconnect
       nixfmt
     ];
     shells = with pkgs; [ fish ];
