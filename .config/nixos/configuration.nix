@@ -163,6 +163,7 @@
       rofi
       nixfmt
       libsForQt5.kalk
+      podman-compose
     ];
     shells = with pkgs; [ fish ];
   };
