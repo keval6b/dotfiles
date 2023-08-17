@@ -1,7 +1,0 @@
-configuration {
-	modes: "run";
-	font: "Hack 13";
-	show-icons: true;
-/*	auto-select: false;*/
-}
-@theme "/nix/store/bbb1fd0vs5pq20v2snjjypx5z8lnvppf-rofi-1.7.5/share/rofi/themes/Arc-Dark.rasi"

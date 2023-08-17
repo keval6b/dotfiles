@@ -2,5 +2,5 @@
 
 pushd ~/
 git --git-dir=$HOME/.dotfiles/ --worktree=$HOME/ checkout master
-ln -sf ~/.dothooks .dotfiles/hooks
+ln -sf ~/.dotbin .dotfiles/hooks
 popd

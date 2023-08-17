@@ -1,6 +1,0 @@
-#!/bin/sh
-
-pushd ~/
-echo "Running nixos-rebuild switch"
-doas nixos-rebuild switch -I nixos-config=.config/nixos/configuration.nix
-popd

@@ -1,1 +1,9 @@
-*
+/*
+
+!/.dotbin/
+!/.config/alacritty/
+!/.config/fish/
+!/.config/nixos/
+
+!/.config/dolphinrc
+!/.config/kglobalshortcutsrc
