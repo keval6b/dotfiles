@@ -1,9 +1,13 @@
 /*
-
 !/.dotbin/
+!/.gitignore
+!/.gitconfig
+!/README.md
+
+!/.config
+/.config/*
 !/.config/alacritty/
 !/.config/fish/
 !/.config/nixos/
-
 !/.config/dolphinrc
 !/.config/kglobalshortcutsrc
