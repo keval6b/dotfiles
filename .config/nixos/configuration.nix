@@ -146,7 +146,6 @@
     plasma5.excludePackages = with pkgs.libsForQt5; [
       elisa
       khelpcenter
-      krunner
       konsole
     ];
     systemPackages = with pkgs; [
@@ -160,7 +159,6 @@
       vscode
       spotify
       discord
-      rofi
       nixfmt
       libsForQt5.kalk
       podman-compose
