@@ -233,9 +233,9 @@ _k_friendly_name=Konsole
 _launch=Ctrl+Alt+T,Ctrl+Alt+T,Konsole
 
 [org.kde.krunner.desktop]
-RunClipboard=Alt+Shift+F2,Alt+Shift+F2,Run command on clipboard contents
+RunClipboard=none,Alt+Shift+F2,Run command on clipboard contents
 _k_friendly_name=KRunner
-_launch=Alt+Space\tAlt+F2\tSearch,Alt+Space\tAlt+F2\tSearch,KRunner
+_launch=Meta+Space,Alt+Space\tAlt+F2\tSearch,KRunner
 
 [org.kde.plasma.emojier.desktop]
 _k_friendly_name=Emoji Selector
@@ -296,7 +296,7 @@ toggle do not disturb=none,,Toggle do not disturb
 
 [rofi.desktop]
 _k_friendly_name=Rofi
-_launch=Meta+Space,none,Rofi
+_launch=none,none,Rofi
 
 [systemsettings.desktop]
 _k_friendly_name=System Settings
