@@ -2,5 +2,5 @@
 
 pushd ~/
 echo "Running nixos-rebuild switch --upgrade"
-doas nixos-rebuild switch --upgrade -I nixos-config=.config/nixos/(hostname)/configuration.nix
+doas nixos-rebuild switch --upgrade -I nixos-config=.config/nixos/$(hostname)/configuration.nix
 popd

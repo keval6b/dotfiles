@@ -1,7 +1,10 @@
 { config, lib, pkgs, modulesPath, ... }:
 
 {
-  imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
+  imports = [ 
+    ../common.nix
+    (modulesPath + "/installer/scan/not-detected.nix")
+  ];
 
   fileSystems = {
     "/" = {
@@ -76,10 +79,6 @@
     config.allowUnfree = true;
   };
 
-  time.timeZone = "Europe/London";
-
-  i18n = { defaultLocale = "en_GB.UTF-8"; };
-
   services = {
     xserver = {
       enable = true;
@@ -102,26 +101,9 @@
     };
   };
 
-  security = {
-    sudo.enable = false;
-    doas = {
-      enable = true;
-      extraRules = [{
-        users = [ "keval" ];
-        keepEnv = true;
-        persist = true;
-      }];
-    };
-    rtkit.enable = true;
-  };
+  security.rtkit.enable = true;
 
   programs = {
-    fish = {
-      enable = true;
-      interactiveShellInit = ''
-        set fish_greeting
-      '';
-    };
     gnupg.agent.enable = true;
     kdeconnect.enable = true;
   };
@@ -130,15 +112,6 @@
     podman = {
       enable = true;
       defaultNetwork.settings.dns_enabled = true;
-    };
-  };
-
-  users = {
-    defaultUserShell = pkgs.fish;
-    users.keval = {
-      isNormalUser = true;
-      description = "Keval Kapdee";
-      extraGroups = [ "networkmanager" "libvirtd" "wheel" ];
     };
   };
 
@@ -163,7 +136,6 @@
       libsForQt5.kalk
       podman-compose
     ];
-    shells = with pkgs; [ fish ];
   };
 
   # This value determines the NixOS release from which the default
