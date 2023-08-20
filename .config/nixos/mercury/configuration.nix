@@ -1,33 +1,12 @@
-{ config, lib, pkgs, modulesPath, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   imports = [ 
+    ./hardware-configuration.nix
     ../common.nix
-    (modulesPath + "/installer/scan/not-detected.nix")
   ];
 
-  fileSystems = {
-    "/" = {
-      device = "/dev/disk/by-label/nixos";
-      fsType = "ext4";
-    };
-    "/home" = {
-      device = "/dev/disk/by-label/home";
-      fsType = "ext4";
-    };
-    "/boot/efi" = {
-      device = "/dev/disk/by-label/EFI";
-      fsType = "vfat";
-    };
-  };
-
   boot = {
-    initrd = {
-      availableKernelModules =
-        [ "nvme" "xhci_pci" "usbhid" "usb_storage" "sd_mod" "sdhci_pci" ];
-      kernelModules = [ "nvidia" "amdgpu" ];
-    };
-    kernelModules = [ "kvm-amd" ];
     loader = {
       efi = {
         efiSysMountPoint = "/boot/efi";
@@ -43,8 +22,6 @@
   };
 
   hardware = {
-    cpu.amd.updateMicrocode =
-      lib.mkDefault config.hardware.enableRedistributableFirmware;
     nvidia = {
       modesetting.enable = true;
       open = false;
@@ -62,22 +39,13 @@
     };
   };
 
-  # systemd.targets.sleep.enable = false;
-  # systemd.targets.suspend.enable = false;
-  # systemd.targets.hibernate.enable = false;
-  # systemd.targets.hybrid-sleep.enable = false;
-
   networking = {
-    useDHCP = lib.mkDefault true;
     hostName = "mercury";
     networkmanager.enable = true;
     firewall = { enable = true; };
   };
 
-  nixpkgs = {
-    hostPlatform = lib.mkDefault "x86_64-linux";
-    config.allowUnfree = true;
-  };
+  nixpkgs.config.allowUnfree = true;
 
   services = {
     xserver = {
@@ -122,19 +90,20 @@
       konsole
     ];
     systemPackages = with pkgs; [
-      vim
+      alacritty
+      bind
+      brave
       btop
+      discord
       git
       git-lfs
-      brave
-      alacritty
+      libsForQt5.kalk
+      nixfmt
+      podman-compose
+      spotify
+      vim
       virt-manager
       vscode
-      spotify
-      discord
-      nixfmt
-      libsForQt5.kalk
-      podman-compose
     ];
   };
 
