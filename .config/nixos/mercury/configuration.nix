@@ -77,12 +77,7 @@
     partition-manager.enable = true;
   };
 
-  virtualisation = {
-    podman = {
-      enable = true;
-      defaultNetwork.settings.dns_enabled = true;
-    };
-  };
+  virtualisation.docker.enable = true;
 
   environment = {
     plasma5.excludePackages = with pkgs.libsForQt5; [
@@ -101,7 +96,7 @@
       git-lfs
       libsForQt5.kalk
       nixfmt
-      podman-compose
+      docker-compose
       spotify
       vim
       virt-manager
