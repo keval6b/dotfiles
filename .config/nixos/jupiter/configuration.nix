@@ -47,6 +47,15 @@
     systemPackages = with pkgs; [ vim btop git git-lfs podman-compose ];
   };
 
+  services.openssh = {
+    enable = true;
+    settings = {
+      PasswordAuthentication = false;
+      KbdInteractiveAuthentication = false;
+      PermitRootLogin = "no";
+    };
+  };
+
   virtualisation = {
     podman = {
       enable = true;
