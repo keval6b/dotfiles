@@ -1,6 +1,0 @@
-#!/bin/sh
-
-pushd ~/
-git --git-dir=$HOME/.dotfiles/ --worktree=$HOME/ checkout master
-ln -sf ~/.dotbin .dotfiles/hooks
-popd

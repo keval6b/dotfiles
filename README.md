@@ -4,5 +4,5 @@
 ```sh
 cd ~
 git clone --bare git@kapdee.uk:keval/dotfiles.git .dotfiles
-./setup.sh
+git --git-dir=.dotfiles --work-tree=. checkout master
 ```
