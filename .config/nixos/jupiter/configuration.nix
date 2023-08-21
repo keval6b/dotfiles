@@ -1,10 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-  imports = [ 
-    ./hardware-configuration.nix
-    ../common.nix
-  ];
+  imports = [ ./hardware-configuration.nix ../common.nix ];
 
   boot = {
     loader = {
@@ -23,7 +20,8 @@
 
   networking = {
     hostName = "jupiter";
-    firewall = { enable = true; 
+    firewall = {
+      enable = true;
       allowedTCPPorts = [
         22 # ssh
         25 # smtp
@@ -46,13 +44,7 @@
   };
 
   environment = {
-    systemPackages = with pkgs; [
-      vim
-      btop
-      git
-      git-lfs
-      podman-compose
-    ];
+    systemPackages = with pkgs; [ vim btop git git-lfs podman-compose ];
   };
 
   virtualisation = {

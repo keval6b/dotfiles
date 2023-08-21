@@ -1,10 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-  imports = [ 
-    ./hardware-configuration.nix
-    ../common.nix
-  ];
+  imports = [ ./hardware-configuration.nix ../common.nix ];
 
   boot = {
     loader = {
@@ -42,7 +39,10 @@
   networking = {
     hostName = "mercury";
     networkmanager.enable = true;
-    firewall = { enable = true; };
+    firewall = {
+      enable = true;
+      # allowedUDPPorts = [ 51820 ];
+    };
   };
 
   nixpkgs.config.allowUnfree = true;
@@ -74,6 +74,7 @@
   programs = {
     gnupg.agent.enable = true;
     kdeconnect.enable = true;
+    partition-manager.enable = true;
   };
 
   virtualisation = {
