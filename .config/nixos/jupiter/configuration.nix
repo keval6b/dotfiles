@@ -58,7 +58,7 @@
       btop
       git
       git-lfs
-      podman-compose
+      docker-compose
       nixfmt
       bind
       nmap
@@ -75,10 +75,8 @@
   };
 
   virtualisation = {
-    podman = {
+    docker = {
       enable = true;
-      defaultNetwork.settings.dns_enabled = true;
-      dockerSocket.enable = true;
     };
   };
 

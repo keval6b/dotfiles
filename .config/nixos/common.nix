@@ -34,7 +34,7 @@
     users.keval = {
       isNormalUser = true;
       description = "Keval Kapdee";
-      extraGroups = ["wheel" "podman"];
+      extraGroups = ["wheel" "docker"];
     };
   };
 }
