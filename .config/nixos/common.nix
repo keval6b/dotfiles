@@ -11,7 +11,7 @@
     doas = {
       enable = true;
       extraRules = [{
-        users = [ "keval" ];
+        groups = [ "wheel" ];
         keepEnv = true;
         persist = true;
       }];
@@ -34,6 +34,7 @@
     users.keval = {
       isNormalUser = true;
       description = "Keval Kapdee";
+      extraGroups = ["wheel" "podman"];
     };
   };
 }
