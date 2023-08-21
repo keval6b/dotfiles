@@ -12,3 +12,5 @@
 	defaultBranch = master
 [push]
 	autoSetupRemote = on
+[pull]
+	rebase = true
