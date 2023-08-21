@@ -17,7 +17,7 @@
     fsType = "ext4";
   };
 
-  fileSystems."/boot" = {
+  fileSystems."/boot/efi" = {
     device = "/dev/disk/by-uuid/B728-7E72";
     fsType = "vfat";
   };
