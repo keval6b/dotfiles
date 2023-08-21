@@ -20,6 +20,10 @@
 
   networking = {
     hostName = "jupiter";
+    networking.interfaces.enp0s25 = {
+      useDHCP = false;
+      address = "192.168.16.3";
+    };
     firewall = {
       enable = true;
       allowedTCPPorts = [
