@@ -96,6 +96,7 @@
       brave
       btop
       discord
+      filelight
       git
       git-lfs
       libsForQt5.kalk
