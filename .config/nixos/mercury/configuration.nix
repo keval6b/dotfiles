@@ -95,6 +95,7 @@
       git
       git-lfs
       libsForQt5.kalk
+      nmap
       nixfmt
       docker-compose
       spotify
