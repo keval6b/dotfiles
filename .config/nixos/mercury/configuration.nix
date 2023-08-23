@@ -88,6 +88,7 @@
     systemPackages = with pkgs; [
       alacritty
       bind
+      borgbackup
       brave
       btop
       discord
