@@ -22,6 +22,11 @@
     fsType = "vfat";
   };
 
+  fileSystems."/backup" = {
+    device = "dev/disk/by-uuid/e8eadf3c-728b-47c5-bf22-7f5ba082f8e1";
+    fsType = "ext4";
+  };
+
   swapDevices =
     [{ device = "/dev/disk/by-uuid/f3d7db19-08c5-4268-b581-0be660f21be5"; }];
 
@@ -29,10 +34,11 @@
   # (the default) this is the recommended approach. When using systemd-networkd it's
   # still possible to use this option, but it's recommended to use it in conjunction
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
-  networking.useDHCP = lib.mkDefault true;
+  # networking.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp0s25.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.intel.updateMicrocode =
     lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
+

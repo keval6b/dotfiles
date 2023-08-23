@@ -16,9 +16,6 @@
         # useOSProber = true;
       };
     };
-    kernel.sysctl = {
-      "net.ipv4.ip_unprivileged_port_start" = 80;
-    };
   };
 
   networking = {
@@ -29,27 +26,7 @@
     }];
     defaultGateway = "192.168.16.1";
     nameservers = [ "192.168.16.2" "1.1.1.1" ];
-    firewall = {
-      enable = true;
-      allowedTCPPorts = [
-        22 # ssh
-        25 # smtp
-        53 # dns
-        67 # dhcp
-        80 # http
-        143 # imap
-        443 # https internal
-        465 # smtps
-        587 # smtp
-        993 # imaps
-        1443 # https external
-        # 2080 # pihole http
-        # 25565 # minecraft
-      ];
-      allowedUDPPorts = [
-        51820 # wireguard
-      ];
-    };
+    firewall.enable = true;
   };
 
   environment = {
@@ -61,6 +38,7 @@
       docker-compose
       nixfmt
       bind
+      openssl
       nmap
     ];
   };
