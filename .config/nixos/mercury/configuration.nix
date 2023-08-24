@@ -67,6 +67,7 @@
       enable = true;
       enableUserService = true;
     };
+    tailscale.enable = true;
   };
 
   security.rtkit.enable = true;
@@ -92,13 +93,13 @@
       brave
       btop
       discord
+      docker-compose
       filelight
       git
       git-lfs
       libsForQt5.kalk
       nmap
       nixfmt
-      docker-compose
       spotify
       vim
       virt-manager
