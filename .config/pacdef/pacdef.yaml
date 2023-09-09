@@ -1,2 +1,0 @@
-warn_not_symlinks: false
-disabled_backends: ["cargo", "flatpak", "apt", "pip"]
