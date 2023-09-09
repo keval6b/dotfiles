@@ -1,0 +1,14 @@
+[arch]
+base
+btop
+efibootmgr
+fakeroot
+firewalld
+fish
+grub
+linux
+linux-firmware
+neovim
+opendoas
+pacdef
+paru-bin

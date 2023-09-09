@@ -1,7 +1,7 @@
 MenuBar=Disabled
 
 [$Version]
-update_info=dolphin_detailsmodesettings.upd:rename-leading-padding
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
 
 [ContextMenu]
 ShowAddToPlaces=false
@@ -18,6 +18,10 @@ ViewPropsTimestamp=2023,8,14,14,50,40.633
 [KFileDialog Settings]
 Places Icons Auto-resize=false
 Places Icons Static Size=22
+
+[KPropertiesDialog]
+2 screens: Height=458
+2 screens: Width=403
 
 [MainWindow]
 MenuBar=Disabled
