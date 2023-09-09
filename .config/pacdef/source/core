@@ -3,7 +3,7 @@ base
 btop
 efibootmgr
 fakeroot
-firewalld
+ufw
 fish
 grub
 iptables-nft
@@ -13,3 +13,8 @@ neovim
 opendoas
 pacdef
 paru-bin
+git
+git-lfs
+man-db
+man-pages
+bind

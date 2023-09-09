@@ -10,5 +10,6 @@
 !/.config/fish/
 !/.config/dolphinrc
 !/.config/kglobalshortcutsrc
+!/.config/paru
 !/.config/pacdef
 /.config/pacdef/groups/
