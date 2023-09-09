@@ -1,9 +1,6 @@
 [arch]
 bind
-docker
-docker-compose
 git
 git-lfs
 man-db
 man-pages
-terraform

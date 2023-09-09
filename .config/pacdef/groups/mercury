@@ -2,8 +2,11 @@
 amd-ucode
 asusctl
 bluedevil
+docker
+docker-compose
 ntfs-3g
 nvidia
 os-prober
 powerdevil
 supergfxctl
+terraform

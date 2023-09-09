@@ -6,6 +6,7 @@ fakeroot
 firewalld
 fish
 grub
+iptables-nft
 linux
 linux-firmware
 neovim
