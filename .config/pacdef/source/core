@@ -1,4 +1,5 @@
 [arch]
+pkgconf
 base
 btop
 efibootmgr
