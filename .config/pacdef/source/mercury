@@ -1,4 +1,6 @@
 [arch]
+dnsmasq
+net-tools
 amd-ucode
 asusctl
 bluedevil

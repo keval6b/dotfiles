@@ -1,4 +1,6 @@
 [arch]
+noto-fonts-emoji
+pulseaudio-bluetooth
 breeze
 breeze-gtk
 breeze-plymouth

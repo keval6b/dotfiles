@@ -1,4 +1,5 @@
 [arch]
+texlive-basic
 make
 texinfo
 texlive-bin
