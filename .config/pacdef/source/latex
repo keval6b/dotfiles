@@ -4,7 +4,6 @@ make
 texinfo
 texlive-bin
 texlive-binextra
-texlive-core
 texlive-fontsextra
 texlive-formatsextra
 texlive-latexextra

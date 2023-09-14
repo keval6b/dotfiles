@@ -1,4 +1,9 @@
 [arch]
+gnu-netcat
+nmap
+tailscale
+wget
+k0sctl-bin
 dnsmasq
 net-tools
 amd-ucode
