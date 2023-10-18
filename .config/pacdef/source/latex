@@ -1,4 +1,5 @@
 [arch]
+texlive-xetex
 texlive-basic
 make
 texinfo

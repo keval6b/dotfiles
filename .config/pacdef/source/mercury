@@ -1,4 +1,6 @@
 [arch]
+kubectl
+libreoffice-fresh
 gnu-netcat
 nmap
 tailscale
@@ -17,3 +19,4 @@ os-prober
 powerdevil
 supergfxctl
 terraform
+pulseaudio-bluetooth
