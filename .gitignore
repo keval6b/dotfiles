@@ -13,3 +13,7 @@
 !/.config/paru
 !/.config/pacdef
 /.config/pacdef/groups/
+
+!/.gnupg
+/.gnupg/*
+!/.gnupg/gpg-agent.conf

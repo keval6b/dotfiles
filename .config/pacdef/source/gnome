@@ -1,4 +1,6 @@
 [arch]
+gnome-shell-extension-tray-icons-reloaded-git
+gnome-tweaks
 gvfs
 gvfs-afc
 gvfs-goa
@@ -36,3 +38,4 @@ gnome-disk-utility
 gnome-font-viewer
 gnome-keyring
 gnome-logs
+noto-fonts-emoji
