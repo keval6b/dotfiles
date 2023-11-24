@@ -6,8 +6,6 @@
 [user]
 	name = Keval Kapdee
 	email = keval@kapdee.uk
-[commit]
-	gpgSign = 1
 [init]
 	defaultBranch = master
 [push]
