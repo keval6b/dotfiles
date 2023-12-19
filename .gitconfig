@@ -7,7 +7,7 @@
 	name = Keval Kapdee
 	email = keval@kapdee.uk
 [init]
-	defaultBranch = master
+	defaultBranch = main
 [push]
 	autoSetupRemote = on
 [pull]

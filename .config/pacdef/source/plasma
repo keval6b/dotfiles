@@ -1,4 +1,6 @@
 [arch]
+kgamma
+networkmanager
 dolphin
 noto-fonts-emoji
 breeze
@@ -10,7 +12,6 @@ kde-gtk-config
 kdeconnect
 kdecoration
 kdeplasma-addons
-kgamma5
 khotkeys
 kinfocenter
 kmenuedit
@@ -20,7 +21,6 @@ kscreenlocker
 ksshaskpass
 ksystemstats
 kwallet-pam
-kwalletmanager
 kwayland-integration
 kwin
 kwrited
@@ -39,12 +39,10 @@ plasma-sdk
 plasma-systemmonitor
 plasma-wayland-session
 plasma-workspace
-plasma5-applets-supergfxctl
 plymouth-kcm
 polkit-kde-agent
 sddm-kcm
 spectacle
 systemsettings
-wl-clipboard
 xdg-desktop-portal-kde
 powerdevil

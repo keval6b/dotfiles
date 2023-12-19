@@ -1,4 +1,5 @@
 [arch]
+npm
 nvidia-settings
 kubectl
 libreoffice-fresh

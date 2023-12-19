@@ -8,11 +8,13 @@
 /.config/*
 !/.config/alacritty/
 !/.config/fish/
+!/.config/hypr/
 !/.config/dolphinrc
 !/.config/kglobalshortcutsrc
 !/.config/paru
 !/.config/pacdef
 /.config/pacdef/groups/
+
 
 !/.gnupg
 /.gnupg/*

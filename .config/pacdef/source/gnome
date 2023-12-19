@@ -1,4 +1,7 @@
 [arch]
+gnome-shell-extension-gsconnect
+gnome-themes-extra
+networkmanager
 gnome-shell-extension-tray-icons-reloaded-git
 gnome-tweaks
 gvfs
@@ -27,7 +30,6 @@ gnome-user-share
 gnome-weather
 evince
 gdm
-geary
 gnome-calculator
 gnome-calendar
 gnome-characters

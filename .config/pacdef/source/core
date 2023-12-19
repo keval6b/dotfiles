@@ -1,4 +1,6 @@
 [arch]
+tldr
+jq
 patch
 which
 yay
@@ -7,7 +9,6 @@ base
 btop
 efibootmgr
 fakeroot
-ufw
 fish
 grub
 iptables-nft

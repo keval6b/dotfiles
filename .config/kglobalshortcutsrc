@@ -11,11 +11,12 @@ _launch=Meta+Return,none,Alacritty
 Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
-[brave-browser.desktop]
-_k_friendly_name=Brave Web Browser
-_launch=Meta+B,none,Brave Web Browser
-new-private-window=none,none,New Incognito window
+[firefox.desktop]
+_k_friendly_name=Firefox Web Browser
+_launch=Meta+B,none,Firefox Web Browser
+new-private-window=none,none,New Private Window
 new-window=none,none,New Window
+profile-manager-window=none,none,Open the Profile Manager
 
 [kaccess]
 Toggle Screen Reader On and Off=none,Meta+Alt+S,Toggle Screen Reader On and Off
@@ -209,16 +210,16 @@ Window to Screen 6=none,,Window to Screen 6
 Window to Screen 7=none,,Window to Screen 7
 _k_friendly_name=KWin
 view_actual_size=Meta+0,Meta+0,Zoom to Actual Size
-view_zoom_in=Meta++\tMeta+=,Meta++,Zoom In
+view_zoom_in=Meta++\tMeta+=,Meta++\tMeta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
 
 [mediacontrol]
 _k_friendly_name=Media Controller
-mediavolumedown=none,,Media volume down
-mediavolumeup=none,,Media volume up
+mediavolumedown=none,none,Media volume down
+mediavolumeup=none,none,Media volume up
 nextmedia=Media Next,Media Next,Media playback next
 pausemedia=Media Pause,Media Pause,Pause media playback
-playmedia=none,,Play media playback
+playmedia=none,none,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
@@ -226,12 +227,6 @@ stopmedia=Media Stop,Media Stop,Stop media playback
 [org.kde.dolphin.desktop]
 _k_friendly_name=Dolphin
 _launch=Meta+E,Meta+E,Dolphin
-
-[org.kde.konsole.desktop]
-NewTab=none,none,Open a New Tab
-NewWindow=none,none,Open a New Window
-_k_friendly_name=Konsole
-_launch=Ctrl+Alt+T,Ctrl+Alt+T,Konsole
 
 [org.kde.krunner.desktop]
 RunClipboard=none,Alt+Shift+F2,Run command on clipboard contents
@@ -294,10 +289,6 @@ stop current activity=none,Meta+S,Stop Current Activity
 switch to next activity=none,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
-
-[rofi.desktop]
-_k_friendly_name=Rofi
-_launch=none,none,Rofi
 
 [systemsettings.desktop]
 _k_friendly_name=System Settings
