@@ -1,4 +1,12 @@
 [arch]
+dosfstools
+parallel
+sshfs
+tcpdump
+tmux
+traceroute
+unzip
+wireguard-tools
 tldr
 jq
 patch
@@ -22,3 +30,7 @@ git-lfs
 man-db
 man-pages
 bind
+wget
+
+gnu-netcat
+nmap

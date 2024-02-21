@@ -1,7 +1,0 @@
-window:
-  dimensions:
-    columns: 100
-    lines: 24
-  opacity: 0.9
-font:
-  size: 13
