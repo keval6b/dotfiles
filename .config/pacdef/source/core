@@ -31,6 +31,6 @@ man-db
 man-pages
 bind
 wget
-
 gnu-netcat
 nmap
+net-tools
