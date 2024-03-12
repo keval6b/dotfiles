@@ -1,4 +1,10 @@
 [arch]
+gleam-bin
+goland-eap
+goland-eap-jre
+helm
+pre-commit
+shellcheck
 argocd
 docker-buildx
 hugo
