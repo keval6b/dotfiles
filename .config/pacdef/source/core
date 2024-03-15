@@ -1,4 +1,9 @@
 [arch]
+gcc
+go
+make
+openssh
+reflector
 dosfstools
 parallel
 sshfs

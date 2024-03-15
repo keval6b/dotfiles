@@ -1,4 +1,6 @@
 [arch]
+btrfs-progs
+grub-btrfs
 nvidia-settings
 amd-ucode
 asusctl
@@ -7,4 +9,3 @@ ntfs-3g
 nvidia
 os-prober
 supergfxctl
-pulseaudio-bluetooth
