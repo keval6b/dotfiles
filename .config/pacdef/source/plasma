@@ -10,7 +10,6 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 sddm
-timeshift-autosnap
 dnsmasq
 ark
 filelight
