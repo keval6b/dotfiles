@@ -1,6 +1,9 @@
 [arch]
 alacritty
-firefox
+brave-bin
+ktorrent
+kaccounts-providers
+kontact
 kleopatra
 kwallet-pam
 kwalletmanager

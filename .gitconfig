@@ -12,3 +12,5 @@
 	autoSetupRemote = on
 [pull]
 	rebase = true
+[core]
+	autocrlf = input

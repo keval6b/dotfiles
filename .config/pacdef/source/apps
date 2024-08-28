@@ -1,4 +1,13 @@
 [arch]
+1password
+jetbrains-toolbox
+leapp-bin
+localsend-bin
+postman-bin
+vscodium-bin-marketplace
+aws-cli-v2-bin
+wireshark-qt
+jdk-openjdk
 thunderbird
 vscodium-bin
 discord
@@ -6,10 +15,7 @@ obsidian
 spotify
 gimp
 virt-manager
-nextcloud-client
 qemu-desktop
-goland-eap
-goland-eap-jre
 helm
 pre-commit
 shellcheck

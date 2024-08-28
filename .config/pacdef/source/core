@@ -1,4 +1,11 @@
 [arch]
+pacdef-bin
+screen
+debugedit
+gptfdisk
+snap-pac
+snapper
+xq
 gcc
 go
 make
@@ -29,7 +36,6 @@ linux
 linux-firmware
 neovim
 opendoas
-pacdef
 git
 git-lfs
 man-db
