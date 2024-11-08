@@ -1,5 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export ANDROID_HOME:/home/keval/Android/sdk/
+SETUVAR --export CHROME_EXECUTABLE:brave
 SETUVAR --export EDITOR:nvim
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:555\x1ebrblack
