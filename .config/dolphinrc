@@ -10,6 +10,7 @@ ShowSortBy=false
 ShowViewMode=false
 
 [General]
+BrowseThroughArchives=true
 RememberOpenedTabs=false
 ShowFullPath=true
 Version=202

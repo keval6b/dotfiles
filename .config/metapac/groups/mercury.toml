@@ -1,0 +1,12 @@
+arch = [
+  "btrfs-progs",
+  "grub-btrfs",
+  "nvidia-settings",
+  "amd-ucode",
+  "asusctl",
+  "bluedevil",
+  "ntfs-3g",
+  "nvidia",
+  "os-prober",
+  "supergfxctl",
+]

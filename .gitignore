@@ -10,8 +10,7 @@
 !/.config/hypr/
 !/.config/dolphinrc
 !/.config/kglobalshortcutsrc
-!/.config/pacdef
-/.config/pacdef/groups/
+!/.config/metapac
 
 !/.gnupg
 /.gnupg/*

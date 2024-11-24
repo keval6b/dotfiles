@@ -1,0 +1,10 @@
+arch = [
+  "texlive-xetex",
+  "texlive-basic",
+  "texinfo",
+  "texlive-bin",
+  "texlive-binextra",
+  "texlive-fontsextra",
+  "texlive-formatsextra",
+  "texlive-latexextra",
+]
