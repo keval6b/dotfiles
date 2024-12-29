@@ -44,4 +44,5 @@ arch = [
   "gnu-netcat",
   "nmap",
   "net-tools",
+  "rustup",
 ]

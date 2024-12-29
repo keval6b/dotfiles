@@ -1,5 +1,5 @@
 arch = [
-  "alacritty",
+  "ghostty",
   "brave-bin",
   "ktorrent",
   "kaccounts-providers",

@@ -6,7 +6,7 @@ arch = [
   "asusctl",
   "bluedevil",
   "ntfs-3g",
-  "nvidia",
+  "nvidia-open",
   "os-prober",
   "supergfxctl",
 ]
