@@ -268,7 +268,7 @@ toggle do not disturb=none,,Toggle do not disturb
 [services][Alacritty.desktop]
 _launch=Meta+Return
 
-[services][brave-browser.desktop]
+[services][net.local.brave.desktop]
 _launch=Meta+B
 
 [services][org.kde.krunner.desktop]
