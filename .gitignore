@@ -5,7 +5,7 @@
 
 !/.config
 /.config/*
-!/.config/alacritty/
+!/.config/ghostty/
 !/.config/fish/
 !/.config/hypr/
 !/.config/dolphinrc
