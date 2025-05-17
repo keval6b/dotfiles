@@ -1,0 +1,15 @@
+arch = [
+  "1password",
+  "jetbrains-toolbox",
+  "leapp-bin",
+  "localsend-bin",
+  "thunderbird",
+  "discord",
+  "obsidian",
+  "spotify",
+  "gimp",
+  "pre-commit",
+  "hugo",
+  "aws-session-manager-plugin",
+  "pnpm",
+]

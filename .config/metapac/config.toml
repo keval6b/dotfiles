@@ -24,7 +24,7 @@ flatpak_systemwide = true
 # Backends to disable from all metapac behavior. See the README.md for
 # the list of backend names
 # Default: []
-disabled_backends = ["brew", "pipx", "cargo", "rustup", "winget", "xbps"]
+disabled_backends = ["brew", "pipx", "cargo", "cargo", "winget", "xbps"]
 
 # Whether to use the [hostname_groups] config table to decide which
 # group files to use or to use all files in the groups folder.
@@ -35,4 +35,4 @@ hostname_groups_enabled = true
 # paths starting without a / are relative to the groups folder
 # Default: None
 [hostname_groups]
-mercury = ["core", "mercury", "plasma", "apps", "latex"]
+mercury = ["core", "mercury", "plasma", "minimal-apps"]

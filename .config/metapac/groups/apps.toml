@@ -5,7 +5,6 @@ arch = [
   "localsend-bin",
   "postman-bin",
   "vscodium-bin-marketplace",
-  "aws-cli-v2-bin",
   "wireshark-qt",
   "thunderbird",
   "vscodium-bin",

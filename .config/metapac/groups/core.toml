@@ -1,7 +1,5 @@
 arch = [
   "metapac-bin",
-  "screen",
-  "debugedit",
   "gptfdisk",
   "snap-pac",
   "snapper",
@@ -11,7 +9,6 @@ arch = [
   "openssh",
   "reflector",
   "dosfstools",
-  "parallel",
   "sshfs",
   "tcpdump",
   "tmux",
@@ -44,5 +41,4 @@ arch = [
   "gnu-netcat",
   "nmap",
   "net-tools",
-  "rustup",
 ]
