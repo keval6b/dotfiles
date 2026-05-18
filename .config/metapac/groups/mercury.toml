@@ -1,11 +1,11 @@
-arch = {packages=[
-  "nvidia-settings",
+[arch]
+packages = [
   "amd-ucode",
   "asusctl",
   "bluedevil",
   "ntfs-3g",
   "nvidia-open",
+  "nvidia-settings",
   "os-prober",
   "supergfxctl",
 ]
-}

@@ -1,13 +1,13 @@
-arch = {packages=[
+[arch]
+packages = [
   "1password",
-  "localsend-bin",
-  "thunderbird",
   "discord",
+  "gimp",
+  "localsend-bin",
+  "nextcloud-client",
+  "obs-studio",
   "obsidian",
   "spotify",
-  "gimp",
-  "obs-studio",
   "tailscale",
-  "nextcloud-client",
+  "thunderbird",
 ]
-}

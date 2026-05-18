@@ -1,7 +1,6 @@
-arch = {
+[arch]
 packages = [
-"curseforge",
-"jdk17-openjdk",
-"steam",
+  "curseforge",
+  "jdk17-openjdk",
+  "steam",
 ]
-}
