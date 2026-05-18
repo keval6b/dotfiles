@@ -2,7 +2,7 @@
 _k_friendly_name=Activity Manager
 switch-to-activity-2260dce7-6d21-43fe-b05a-91dea34cdc78=none,none,Switch to activity "Default"
 switch-to-activity-4108c766-8fe6-4048-b4a9-0d2f1b2c19d2=none,none,Switch to activity "Default"
-switch-to-activity-5b9512d1-b63c-496d-ae72-c64e1b122445=none,none,Switch to activity "Default"
+switch-to-activity-5b9512d1-b63c-496d-ae72-c64e1b122445=none,none,Switch to activity "Personal"
 switch-to-activity-7c10b64b-c9ea-4bc5-a75b-56b071f04f37=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
@@ -10,15 +10,20 @@ Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Ke
 Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
+[brave-browser]
+0E53EBD02B9AED3759330055EC325F82-addSite=none,none,Toggle current site
+0E53EBD02B9AED3759330055EC325F82-switchEngine=none,none,Theme generation mode
+0E53EBD02B9AED3759330055EC325F82-toggle=none,none,Toggle extension
+104AD643F2D2E13924F2A70F7EBE5593-addSite=none,none,Toggle current site
+104AD643F2D2E13924F2A70F7EBE5593-switchEngine=none,none,Theme generation mode
+104AD643F2D2E13924F2A70F7EBE5593-toggle=none,none,Toggle extension
+1217F52D674CE5ED073257EF84AF8AB1-lock=none,none,Lock the extension
+6AD80DCF544330234F8E85A6B307A3C6-lock=none,none,Lock the extension
+_k_friendly_name=Brave
+
 [kaccess]
 Toggle Screen Reader On and Off=none,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
-
-[kcm_touchpad]
-Disable Touchpad=Touchpad Off,Touchpad Off,Disable Touchpad
-Enable Touchpad=Touchpad On,Touchpad On,Enable Touchpad
-Toggle Touchpad=Touchpad Toggle,Touchpad Toggle\tTouchpad Toggle\tMeta+Ctrl+Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku,Toggle Touchpad
-_k_friendly_name=Touchpad
 
 [kmix]
 _k_friendly_name=Audio Volume
@@ -58,13 +63,14 @@ Cycle Overview=none,none,Cycle through Overview and Grid View
 Cycle Overview Opposite=none,none,Cycle through Grid View and Overview
 Decrease Opacity=none,,Decrease Opacity of Active Window by 5%
 Edit Tiles=Meta+T,Meta+T,Toggle Tiles Editor
-Expose=Ctrl+F9,Ctrl+F9,Toggle Present Windows (Current desktop)
-ExposeAll=Ctrl+F10\tLaunch (C),Ctrl+F10\tLaunch (C),Toggle Present Windows (All desktops)
-ExposeClass=Ctrl+F7,Ctrl+F7,Toggle Present Windows (Window class)
+Expose=Ctrl+F9,Meta+F9\tCtrl+F9,Toggle Present Windows (Current desktop)
+ExposeAll=Ctrl+F10\tLaunch (C),Meta+F10\tLaunch (C)\tCtrl+F10,Toggle Present Windows (All desktops)
+ExposeClass=Ctrl+F7,Meta+F7\tCtrl+F7,Toggle Present Windows (Window class)
 ExposeClassCurrentDesktop=none,none,Toggle Present Windows (Window class on current desktop)
 Grid View=Meta+G,Meta+G,Toggle Grid View
 Increase Opacity=none,,Increase Opacity of Active Window by 5%
 Kill Window=Meta+Ctrl+Esc,Meta+Ctrl+Esc,Kill Window
+Move Tablet to Next LogicalOutput=none,none,Move the tablet to the next output
 Move Tablet to Next Output=none,none,Move the tablet to the next output
 MoveMouseToCenter=Meta+F6,Meta+F6,Move Mouse to Centre
 MoveMouseToFocus=Meta+F5,Meta+F5,Move Mouse to Focus
@@ -84,7 +90,7 @@ Switch Window Down=Meta+Alt+Down,Meta+Alt+Down,Switch to Window Below
 Switch Window Left=Meta+Alt+Left,Meta+Alt+Left,Switch to Window to the Left
 Switch Window Right=Meta+Alt+Right,Meta+Alt+Right,Switch to Window to the Right
 Switch Window Up=Meta+Alt+Up,Meta+Alt+Up,Switch to Window Above
-Switch to Desktop 1=none,Ctrl+F1,Switch to Desktop 1
+Switch to Desktop 1=none,Meta+F1\tCtrl+F1,Switch to Desktop 1
 Switch to Desktop 10=none,,Switch to Desktop 10
 Switch to Desktop 11=none,,Switch to Desktop 11
 Switch to Desktop 12=none,,Switch to Desktop 12
@@ -95,10 +101,15 @@ Switch to Desktop 16=none,,Switch to Desktop 16
 Switch to Desktop 17=none,,Switch to Desktop 17
 Switch to Desktop 18=none,,Switch to Desktop 18
 Switch to Desktop 19=none,,Switch to Desktop 19
-Switch to Desktop 2=none,Ctrl+F2,Switch to Desktop 2
+Switch to Desktop 2=none,Meta+F2\tCtrl+F2,Switch to Desktop 2
 Switch to Desktop 20=none,,Switch to Desktop 20
-Switch to Desktop 3=none,Ctrl+F3,Switch to Desktop 3
-Switch to Desktop 4=none,Ctrl+F4,Switch to Desktop 4
+Switch to Desktop 21=,,Switch to Desktop 21
+Switch to Desktop 22=,,Switch to Desktop 22
+Switch to Desktop 23=,,Switch to Desktop 23
+Switch to Desktop 24=,,Switch to Desktop 24
+Switch to Desktop 25=,,Switch to Desktop 25
+Switch to Desktop 3=none,Meta+F3\tCtrl+F3,Switch to Desktop 3
+Switch to Desktop 4=none,Meta+F4\tCtrl+F4,Switch to Desktop 4
 Switch to Desktop 5=none,,Switch to Desktop 5
 Switch to Desktop 6=none,,Switch to Desktop 6
 Switch to Desktop 7=none,,Switch to Desktop 7
@@ -122,14 +133,14 @@ Switch to Screen to the Left=none,,Switch to Screen to the Left
 Switch to Screen to the Right=none,,Switch to Screen to the Right
 Toggle Night Color=none,none,Suspend/Resume Night Light
 Toggle Window Raise/Lower=none,,Toggle Window Raise/Lower
-Walk Through Windows=Alt+Tab,Alt+Tab,Walk Through Windows
-Walk Through Windows (Reverse)=Alt+Shift+Backtab,Alt+Shift+Tab,Walk Through Windows (Reverse)
-Walk Through Windows Alternative=none,,Walk Through Windows Alternative
-Walk Through Windows Alternative (Reverse)=none,,Walk Through Windows Alternative (Reverse)
-Walk Through Windows of Current Application=Alt+`,Alt+`,Walk Through Windows of Current Application
-Walk Through Windows of Current Application (Reverse)=Alt+~,Alt+~,Walk Through Windows of Current Application (Reverse)
-Walk Through Windows of Current Application Alternative=none,,Walk Through Windows of Current Application Alternative
-Walk Through Windows of Current Application Alternative (Reverse)=none,,Walk Through Windows of Current Application Alternative (Reverse)
+Walk Through Windows=Alt+Tab,Meta+Tab\tAlt+Tab,Walk Through Windows
+Walk Through Windows (Reverse)=Alt+Shift+Backtab,Meta+Shift+Tab\tAlt+Shift+Tab,Walk Through Windows (Reverse)
+Walk Through Windows Alternative=none,none,Walk Through Windows Alternative
+Walk Through Windows Alternative (Reverse)=none,none,Walk Through Windows Alternative (Reverse)
+Walk Through Windows of Current Application=Alt+`,Meta+`\tAlt+`,Walk Through Windows of Current Application
+Walk Through Windows of Current Application (Reverse)=Alt+~,Meta+~\tAlt+~,Walk Through Windows of Current Application (Reverse)
+Walk Through Windows of Current Application Alternative=none,none,Walk Through Windows of Current Application Alternative
+Walk Through Windows of Current Application Alternative (Reverse)=none,none,Walk Through Windows of Current Application Alternative (Reverse)
 Window Above Other Windows=none,,Keep Window Above Others
 Window Below Other Windows=none,,Keep Window Below Others
 Window Close=Meta+Q,Alt+F4,Close Window
@@ -157,7 +168,7 @@ Window One Screen Down=none,,Move Window One Screen Down
 Window One Screen Up=none,,Move Window One Screen Up
 Window One Screen to the Left=none,,Move Window One Screen to the Left
 Window One Screen to the Right=none,,Move Window One Screen to the Right
-Window Operations Menu=Alt+F3,Alt+F3,Window Operations Menu
+Window Operations Menu=Alt+F3,Alt+F3,Window Menu
 Window Pack Down=none,,Move Window Down
 Window Pack Left=none,,Move Window Left
 Window Pack Right=none,,Move Window Right
@@ -172,7 +183,7 @@ Window Quick Tile Top Left=none,,Quick Tile Window to the Top Left
 Window Quick Tile Top Right=none,,Quick Tile Window to the Top Right
 Window Raise=none,,Raise Window
 Window Resize=none,,Resize Window
-Window Shade=none,,Shade Window
+Window Shade=none,none,Shade Window
 Window Shrink Horizontal=none,,Shrink Window Horizontally
 Window Shrink Vertical=none,,Shrink Window Vertically
 Window to Desktop 1=none,,Window to Desktop 1
@@ -188,6 +199,11 @@ Window to Desktop 18=none,,Window to Desktop 18
 Window to Desktop 19=none,,Window to Desktop 19
 Window to Desktop 2=none,,Window to Desktop 2
 Window to Desktop 20=none,,Window to Desktop 20
+Window to Desktop 21=,,Window to Desktop 21
+Window to Desktop 22=,,Window to Desktop 22
+Window to Desktop 23=,,Window to Desktop 23
+Window to Desktop 24=,,Window to Desktop 24
+Window to Desktop 25=,,Window to Desktop 25
 Window to Desktop 3=none,,Window to Desktop 3
 Window to Desktop 4=none,,Window to Desktop 4
 Window to Desktop 5=none,,Window to Desktop 5
@@ -222,7 +238,22 @@ pausemedia=Media Pause,Media Pause,Pause media playback
 playmedia=none,,Play media playback
 playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
+seekbackwardmedia=Media Rewind,Media Rewind,Media playback seek backward 5s
+seekbackwardmedialong=,,Media playback seek backward 30s
+seekforwardmedia=Media Fast Forward,Media Fast Forward,Media playback seek forward 5s
+seekforwardmedialong=,,Media playback seek forward 30s
 stopmedia=Media Stop,Media Stop,Stop media playback
+
+[org.chromium.Chromium]
+0E53EBD02B9AED3759330055EC325F82-addSite=none,none,Toggle current site
+0E53EBD02B9AED3759330055EC325F82-switchEngine=none,none,Theme generation mode
+0E53EBD02B9AED3759330055EC325F82-toggle=none,none,Toggle extension
+104AD643F2D2E13924F2A70F7EBE5593-addSite=none,none,Toggle current site
+104AD643F2D2E13924F2A70F7EBE5593-switchEngine=none,none,Theme generation mode
+104AD643F2D2E13924F2A70F7EBE5593-toggle=none,none,Toggle extension
+1217F52D674CE5ED073257EF84AF8AB1-lock=none,none,Lock the extension
+6AD80DCF544330234F8E85A6B307A3C6-lock=none,none,Lock the extension
+_k_friendly_name=org.chromium.Chromium
 
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
@@ -241,6 +272,7 @@ _k_friendly_name=Power Management
 powerProfile=Battery,Battery\tMeta+B,Switch Power Profile
 
 [plasmashell]
+Slideshow Wallpaper Next Image=none,,Next Wallpaper Image
 _k_friendly_name=plasmashell
 activate application launcher=Meta\tAlt+F1,Meta\tAlt+F1,Activate Application Launcher
 activate task manager entry 1=none,Meta+1,Activate Task Manager Entry 1
@@ -258,7 +290,7 @@ clipboard_action=none,Meta+Ctrl+X,Automatic Action Popup Menu
 cycle-panels=none,Meta+Alt+P,Move keyboard focus between panels
 cycleNextAction=none,,Next History Item
 cyclePrevAction=none,,Previous History Item
-edit_clipboard=none,none,Edit Contents…
+edit_clipboard=none,,Edit Contents…
 manage activities=none,Meta+Q,Show Activity Switcher
 next activity=Meta+A,none,Walk through activities
 previous activity=Meta+Shift+A,none,Walk through activities (Reverse)
@@ -266,7 +298,6 @@ repeat_action=none,,Manually Invoke Action on Current Clipboard
 show dashboard=none,Ctrl+F12,Show Desktop
 show-barcode=none,,Show Barcode…
 show-on-mouse-pos=none,Meta+V,Show Clipboard Items at Mouse Position
-stop current activity=none,Meta+S,Stop Current Activity
 switch to next activity=none,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
@@ -289,6 +320,13 @@ _launch=Alt+Space
 
 [services][org.kde.plasma.emojier.desktop]
 _launch=Meta+.
+
+[services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=
+OpenWithoutScreenshot=
+
+[services][org.kde.touchpadshortcuts.desktop]
+ToggleTouchpad=Touchpad Toggle
 
 [services][vivaldi-stable.desktop]
 _launch=Meta+B

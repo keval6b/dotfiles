@@ -1,6 +1,4 @@
-arch = [
-  "btrfs-progs",
-  "grub-btrfs",
+arch = {packages=[
   "nvidia-settings",
   "amd-ucode",
   "asusctl",
@@ -10,3 +8,4 @@ arch = [
   "os-prober",
   "supergfxctl",
 ]
+}

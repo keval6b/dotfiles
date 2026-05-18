@@ -1,0 +1,21 @@
+arch = {
+packages = [
+"aws-sam-cli-bin",
+"chromium",
+"claude-code",
+"docker",
+"docker-buildx",
+"docker-compose",
+"github-cli",
+"npm",
+"pnpm",
+"prek-bin",
+"t3code-bin",
+"uv",
+"jetbrains-toolbox",
+"leapp-bin",
+"aws-session-manager-plugin",
+"aws-cli-v2",
+"code",
+]
+}

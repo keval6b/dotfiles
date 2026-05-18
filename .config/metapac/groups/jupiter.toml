@@ -1,8 +1,0 @@
-arch = [
-  "btrfs-progs",
-  "grub-btrfs",
-  "intel-ucode",
-  "bluedevil",
-  "os-prober",
-  "broadcom-wl",
-]

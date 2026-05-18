@@ -1,0 +1,7 @@
+arch = {
+packages = [
+"curseforge",
+"jdk17-openjdk",
+"steam",
+]
+}
