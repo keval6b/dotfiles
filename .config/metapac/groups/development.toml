@@ -17,4 +17,5 @@ packages = [
   "prek-bin",
   "t3code-bin",
   "uv",
+  "go",
 ]
