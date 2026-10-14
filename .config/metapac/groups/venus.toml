@@ -1,0 +1,7 @@
+[arch]
+packages = [
+  "amd-ucode",
+  "bluedevil",
+  "ntfs-3g",
+  "os-prober",
+]
