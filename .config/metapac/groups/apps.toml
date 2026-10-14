@@ -1,13 +1,17 @@
 [arch]
 packages = [
   "1password",
+  "anydesk-bin",
+  "claude-code",
+  "cursor-bin",
   "discord",
   "gimp",
+  "kdenlive",
   "localsend-bin",
-  "nextcloud-client",
   "obs-studio",
   "obsidian",
   "spotify",
   "tailscale",
   "thunderbird",
+  "wireshark-qt",
 ]

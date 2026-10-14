@@ -27,7 +27,8 @@ hostname_groups_enabled = true
 # Relative paths are relative to the groups folder.
 # Default: None
 [hostname_groups]
-mercury = ["core", "mercury", "plasma", "apps", "development", "games"]
+mercury = ["core", "mercury", "plasma", "apps", "development"]
+venus = ["core", "venus", "plasma", "apps", "development"]
 
 [arch]
 # Since pacman, pamac, paru, pikaur and yay all operate on the same package database

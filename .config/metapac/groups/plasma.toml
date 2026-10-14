@@ -2,6 +2,7 @@
 packages = [
   "alacritty",
   "ark",
+  "bluez-utils",
   "brave-bin",
   "breeze",
   "breeze-gtk",
@@ -9,6 +10,7 @@ packages = [
   "dolphin",
   "filelight",
   "gwenview",
+  "inotify-tools",
   "kaccounts-providers",
   "kactivitymanagerd",
   "kate",
@@ -51,5 +53,7 @@ packages = [
   "sddm-kcm",
   "spectacle",
   "systemsettings",
+  "tesseract",
+  "tesseract-data-eng",
   "xdg-desktop-portal-kde",
 ]
