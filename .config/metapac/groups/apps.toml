@@ -2,7 +2,7 @@
 packages = [
   "1password",
   "anydesk-bin",
-  "claude-code",
+  "ya-claude-code",
   "cursor-bin",
   "discord",
   "gimp",

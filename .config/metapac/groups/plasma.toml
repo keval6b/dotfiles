@@ -3,7 +3,7 @@ packages = [
   "alacritty",
   "ark",
   "bluez-utils",
-  "brave-bin",
+  "brave-origin-bin",
   "breeze",
   "breeze-gtk",
   "dnsmasq",

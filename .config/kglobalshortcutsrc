@@ -3,6 +3,7 @@ _k_friendly_name=Activity Manager
 switch-to-activity-2260dce7-6d21-43fe-b05a-91dea34cdc78=none,none,Switch to activity "Default"
 switch-to-activity-4108c766-8fe6-4048-b4a9-0d2f1b2c19d2=none,none,Switch to activity "Default"
 switch-to-activity-5b9512d1-b63c-496d-ae72-c64e1b122445=none,none,Switch to activity "Personal"
+switch-to-activity-7823530b-acde-44ee-9732-fd91ab36071e=none,none,Switch to activity "Default"
 switch-to-activity-7c10b64b-c9ea-4bc5-a75b-56b071f04f37=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
@@ -10,19 +11,10 @@ Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Ke
 Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
-[brave-browser]
-0E53EBD02B9AED3759330055EC325F82-addSite=none,none,Toggle current site
-0E53EBD02B9AED3759330055EC325F82-switchEngine=none,none,Theme generation mode
-0E53EBD02B9AED3759330055EC325F82-toggle=none,none,Toggle extension
-104AD643F2D2E13924F2A70F7EBE5593-addSite=none,none,Toggle current site
-104AD643F2D2E13924F2A70F7EBE5593-switchEngine=none,none,Theme generation mode
-104AD643F2D2E13924F2A70F7EBE5593-toggle=none,none,Toggle extension
-1217F52D674CE5ED073257EF84AF8AB1-lock=none,none,Lock the extension
-6AD80DCF544330234F8E85A6B307A3C6-lock=none,none,Lock the extension
-_k_friendly_name=Brave
-
 [com.onepassword.OnePassword]
 10F52DFE5420D2736C74D41609A0A9B5-=none,none,1Password shortcut:\s
+2CD1DBABCAC04FE78510075A7311424D-=none,none,1Password shortcut:\s
+4B41D4A95A637DDB1A97A42EFF888D70-Ctrl+Shift+Space=none,Ctrl+Shift+Space,1Password shortcut: Ctrl+Shift+Space
 9CDAA81CECCA1D41A949EF5B343B1991-Ctrl+Shift+Space=Ctrl+Shift+Space,Ctrl+Shift+Space,1Password shortcut: Ctrl+Shift+Space
 _k_friendly_name=1Password
 
@@ -316,6 +308,9 @@ _launch=Meta+Return
 [services][brave-browser.desktop]
 _launch=Meta+B
 
+[services][brave-origin.desktop]
+_launch=Meta+B
+
 [services][com.mitchellh.ghostty.desktop]
 _launch=Meta+Return
 
@@ -330,6 +325,8 @@ _launch=Alt+Space
 _launch=Meta+.
 
 [services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=none
+OpenWithoutScreenshot=none
 RectangularRegionScreenShot=Meta+Shift+S\tMeta+Shift+Print
 _launch=Print
 
